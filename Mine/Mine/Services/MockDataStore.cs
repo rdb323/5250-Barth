@@ -14,7 +14,6 @@ namespace Mine.Services
         {
             items = new List<ItemModel>()
             {
-                new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Calli", Description="Guh!", Value = 1000000 },
                 new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Roboko", Description="Herobo", Value=6},
                 new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Aki", Description="Alona~", Value=400000 },
                 new ItemModel { Id = Guid.NewGuid().ToString(), Text = "Ayame", Description="Yo dayo", Value=1 },
