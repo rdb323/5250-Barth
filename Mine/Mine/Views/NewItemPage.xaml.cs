@@ -13,6 +13,11 @@ namespace Mine.Views
     [DesignTimeVisible(false)]
     public partial class NewItemPage : ContentPage
     {
+        void Value_OnStepperValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            ValueValue.Text = String.Format("{0}", e.NewValue);
+        }
+
         public ItemModel Item { get; set; }
 
         public NewItemPage()
