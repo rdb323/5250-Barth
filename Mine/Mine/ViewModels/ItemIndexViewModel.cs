@@ -67,6 +67,11 @@ namespace Mine.ViewModels
             return result;
         }
 
+        /// <summary>
+        /// Delete the record from the system
+        /// </summary>
+        /// <param name="data">The Record to Delete</param>
+        /// <returns>True if deleted</returns>
         async Task<bool> DeleteAsync(ItemModel data)
         {
             //Check if the record exists, if not returns false
