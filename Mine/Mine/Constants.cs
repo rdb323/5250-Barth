@@ -6,6 +6,6 @@ namespace Mine
 {
     class Constants
     {
-
+        public const string DatabaseFilename = "TodoSQLite.db3";
     }
 }
