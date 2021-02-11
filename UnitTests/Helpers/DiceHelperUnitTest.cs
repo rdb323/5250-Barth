@@ -11,12 +11,12 @@ namespace UnitTests.Helpers
     class DiceHelperUnitTest
     {
         [Test]
-        public void RollDice_Invalid_Roll_0_Should_Return_0()
+        public void RollDice_Invalid_Roll_0_Dice_10_Should_Return_0()
         {
             //Arrange
 
             //Act
-            var result = DiceHelper.RollDice(0, 1);
+            var result = DiceHelper.RollDice(0, 10);
 
             //Reset
 
