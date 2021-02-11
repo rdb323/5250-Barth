@@ -11,7 +11,7 @@ namespace UnitTests.Helpers
     class DiceHelperUnitTest
     {
         [Test]
-        public void RollDice_Invalid_Roll_Zero_Should_Return_Zero()
+        public void RollDice_Invalid_Roll_0_Should_Return_0()
         {
             //Arrange
 
@@ -73,6 +73,21 @@ namespace UnitTests.Helpers
 
             //Assert
             Assert.AreEqual(15, result);
+        }
+
+        [Test]
+        public void RollDice_Valid_Roll_2_Dice_6_Should_Return_Between_2_And_12()
+        {
+            //Arrange
+
+            //Act
+            var result = DiceHelper.RollDice(2, 6);
+
+            //Reset
+
+            //Assert
+            Assert.AreEqual(true, result >= 2);
+            Assert.AreEqual(true, result <= 12);
         }
     }
 }
